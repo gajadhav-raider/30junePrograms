@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hidden Properties</title>
+    </head>
+    <body>
+        <div id="div" style="background-color: green;font-size: 25px;border: solid red 2px;">
+     Welcome to CCH faimily
+        </div>
+        <button id="btn1" onclick="fun1()">
+            Click Me for display Property
+              </button>
+        <p id="p" style="background-color: skyblue;font-size:20px;">
+            Green is my favourite color
+        </p>
+        <button id="btn2" onclick="fun2()">
+      Click Me for visibility Property
+        </button>
+        <script>
+            function fun1()
+            {
+                document.getElementById("div").style.display="none";
+            }
+            function fun2()
+            {
+                document.getElementById("p").style.visibility="hidden";
+            }
+        </script>
+    </body>
+</html>

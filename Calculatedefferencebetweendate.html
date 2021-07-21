@@ -1,0 +1,15 @@
+<script>
+    function fun()
+    {
+      var d1value= document.getElementById("d1").value;
+      var d2value= document.getElementById("d2").value;
+         var date1= new Date(d1value);
+         var date2= new Date(d2value);
+           var result=(date2-date1)/(1000*60*60*24);
+         return document.getElementById("result").innerHTML=result+"days Difference";
+    }
+</script>
+  <p> enter date 1:<input type="date" id="d1"></p><br>
+  <p> enter date 2:<input type="date" id="d2"></p><br>
+  <button onclick="fun()">Clickme</button>
+  <h3 id="result"></h3>

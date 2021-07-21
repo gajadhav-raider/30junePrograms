@@ -1,0 +1,15 @@
+<script>
+    function fun()
+    {
+        var date= new Date();
+        document.getElementById("d1").innerHTML="Current Time is "+date;
+    }
+    var s= setInterval(fun, 2000);
+    function stop()
+    {
+        clearInterval(s);
+    }
+</script>
+<h3>This an Example of timmer</h3>
+<p id="d1"></p>
+<button onclick="stop()">Click me</button>

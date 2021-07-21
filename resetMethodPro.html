@@ -1,0 +1,20 @@
+<div background-color:"lightblue">
+    <form action="#" id="myform">
+<p>First Name:<input type="text" name="fname"><br></p>
+<p>Last Name:<input type="text" name="fname"><br></p>
+<p>Emailid:<input type="email" name="fname"><br></p>
+<p>Age:<input type="number" name="fname"><br></p>
+<input type="button" value="Submit" onclick="display()">
+<input type="button" value="Reset" onclick="fun()">
+</form>
+</div>
+<script>
+    function fun()
+    {
+        document.getElementById("myform").reset();
+    }
+    function display()
+    {
+        return "Hi Gaurav";
+    }
+</script>

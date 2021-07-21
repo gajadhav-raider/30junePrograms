@@ -1,0 +1,11 @@
+<p> Here, a new tab will open after 2 seconds and close after 2 seconds. </p>  
+  
+<script>  
+var a = setTimeout(fun1, 2000);  
+function fun1()  
+{  
+var win1 = window.open();  
+win1.document.write(" <h2> Welcome to the javaTpoint.com </h2>");  
+setTimeout(function(){win1.close()}, 2000);  
+}  
+</script> 

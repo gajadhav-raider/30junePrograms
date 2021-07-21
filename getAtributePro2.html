@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        getAttribute
+    </head>
+    <body>
+        <h2>this is for getAttribute</h2>
+        <div id="p2" style="background-color: green;font-size: medium;border: solid 2px;">
+            My name is Gaurav Jadhav
+        </div>
+        <button onclick="fun()">Click me</button>
+        <p id="p" ></p>
+        <script>
+            function fun()
+            {
+               var val= document.getElementById("p2").getAttribute("style");
+              document.getElementById("p").innerHTML=val;
+            }
+        </script>
+    </body>
+</html>

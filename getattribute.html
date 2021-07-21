@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+The getAttribute Method
+</title>
+</head>
+<body>
+
+<h2>
+Example of the getAttribute() Method
+</h2>
+
+<div id = "div1" style = "background-color: yellow; font-size: 25px; color: red; border: 2px solid red;">
+This is first div element.
+</div>
+<br>
+<div id = "div2" style = "background-color: lightblue; font-size: 25px; color: blue; border: 2px solid blue;">
+This is second div element.
+</div>
+<br>
+<button onclick = "fun()">
+Click me!
+</button>
+<p id = "p"></p>
+<p id = "p1"></p>
+<script>
+function fun() {
+var val = document.getElementById("div1").getAttribute("style");
+document.getElementById("p").innerHTML = val;
+var val1 = document.getElementById("div2").getAttribute("style");
+document.getElementById("p1").innerHTML = val1;
+}
+</script>
+</body>
+
+</html>
+
+ 
